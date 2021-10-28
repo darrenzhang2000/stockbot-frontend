@@ -34,8 +34,10 @@ const StockSearch = props => {
         };
 
         axios(options).then(res => {
-            if (true) {
+            if (!res || !res.data || !res.data.quoteSummary || res.data.quoteSummary.error) {
                 console.log(res)
+                setSearchInput("")
+                setDisplayRes(false)
                 return
             }
             else {

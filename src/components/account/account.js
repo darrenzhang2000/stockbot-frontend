@@ -56,7 +56,7 @@ const Account = () => {
     const handleUpdateSpendingPower = (e) => {
         e.preventDefault()
         if (e.target.id == WITHDRAW) {
-            updateSpendingPower(amount)
+            updateSpendingPower(-amount)
         } else if (e.target.id == DEPOSIT) {
             updateSpendingPower(amount)
         }
