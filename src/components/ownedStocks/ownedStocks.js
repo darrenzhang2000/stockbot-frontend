@@ -15,7 +15,7 @@ const OwnedStocks = () => {
     const getOwnedStocks = async () => {
         var headers = {
             'accept': 'application/json',
-            'X-API-KEY': 'Ehmj9CLOzr9TB4gkqCiHp2u8HoZ2JiKC9qVRNeva'
+            'X-API-KEY': 'm3a4Yjdgrx4hk0LBwFLnz9JPbIdhZE965VasGCNc'
         };
 
         var data = {
@@ -43,7 +43,7 @@ const OwnedStocks = () => {
     const getStockPrices = async (tickerList) => {
         var headers = {
             'accept': 'application/json',
-            'X-API-KEY': 'Ehmj9CLOzr9TB4gkqCiHp2u8HoZ2JiKC9qVRNeva'
+            'X-API-KEY': 'm3a4Yjdgrx4hk0LBwFLnz9JPbIdhZE965VasGCNc'
         };
 
         let tickerQueryParams = tickerList.join("%2C")

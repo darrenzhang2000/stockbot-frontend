@@ -25,7 +25,7 @@ const StockSearch = props => {
 
         var headers = {
             'accept': 'application/json',
-            'X-API-KEY': 'Ehmj9CLOzr9TB4gkqCiHp2u8HoZ2JiKC9qVRNeva'
+            'X-API-KEY': 'm3a4Yjdgrx4hk0LBwFLnz9JPbIdhZE965VasGCNc'
         };
 
         var options = {
@@ -34,24 +34,26 @@ const StockSearch = props => {
         };
 
         axios(options).then(res => {
-            if(!(res || res.data || res.data.quoteSummary)){
-                setDisplayRes(false)
+            if (true) {
+                console.log(res)
                 return
             }
-            console.log(res.data.quoteSummary.result[0].price)
-            const price = res.data.quoteSummary.result[0].price
-            setMarketPrice(price.regularMarketPrice.fmt)
-            setMarketChange(price.regularMarketChange.fmt)
-            setMarketDayHigh(price.regularMarketDayHigh.fmt)
-            setMarketDayLow(price.regularMarketDayLow.fmt)
-            setMarketVolume(price.regularMarketVolume.fmt)
-            setMarketPreviousClose(price.regularMarketPreviousClose.fmt)
-            setMarketOpen(price.regularMarketOpen.fmt)
-            setLongName(price.longName)
-            setMarketCap(price.marketCap.fmt)
-            setCurrency(price.currency)
-            setDisplayRes(true)
-            setTicker(e.target.value)
+            else {
+                console.log(res.data.quoteSummary.result[0].price)
+                const price = res.data.quoteSummary.result[0].price
+                setMarketPrice(price.regularMarketPrice.fmt)
+                setMarketChange(price.regularMarketChange.fmt)
+                setMarketDayHigh(price.regularMarketDayHigh.fmt)
+                setMarketDayLow(price.regularMarketDayLow.fmt)
+                setMarketVolume(price.regularMarketVolume.fmt)
+                setMarketPreviousClose(price.regularMarketPreviousClose.fmt)
+                setMarketOpen(price.regularMarketOpen.fmt)
+                setLongName(price.longName)
+                setMarketCap(price.marketCap.fmt)
+                setCurrency(price.currency)
+                setDisplayRes(true)
+                setTicker(e.target.value)
+            }
         })
     }
 
