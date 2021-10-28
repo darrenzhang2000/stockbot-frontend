@@ -24,7 +24,7 @@ export const mainListItems = (
                 <ListItemIcon>
                     <HomeIcon />
                 </ListItemIcon>
-                <ListItemText primary="Home Page" />
+                <ListItemText primary="About Page" />
             </ListItem>
         </Link>
 

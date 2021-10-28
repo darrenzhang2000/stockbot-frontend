@@ -34,6 +34,10 @@ const StockSearch = props => {
         };
 
         axios(options).then(res => {
+            if(!(res || res.data || res.data.quoteSummary)){
+                setDisplayRes(false)
+                return
+            }
             console.log(res.data.quoteSummary.result[0].price)
             const price = res.data.quoteSummary.result[0].price
             setMarketPrice(price.regularMarketPrice.fmt)

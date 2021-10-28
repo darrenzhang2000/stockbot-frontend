@@ -13,7 +13,7 @@ const Home = () => {
                     marginBottom: '64px'
                 }}
             >
-                <Typography variant="h4" className="font-link">Welcome to the Stock Bot Home Page</Typography>
+                <Typography variant="h4" className="font-link">Welcome to the Stock Bot About Page</Typography>
             </Paper>
             <Divider />
             <Paper
