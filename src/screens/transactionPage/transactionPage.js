@@ -26,7 +26,7 @@ const TransactionPage = (props) => {
 
         var options = {
             method: 'GET',
-            url: 'http://localhost:5000/transactions/',
+            url: 'https://morning-brushlands-41565.herokuapp.com/transactions/',
             headers: headers,
             params: data
         };

@@ -24,7 +24,7 @@ const Account = () => {
 
         var options = {
             method: 'GET',
-            url: 'http://localhost:5000/portfolios/',
+            url: 'https://morning-brushlands-41565.herokuapp.com/portfolios/',
             headers: headers,
             params: data
         };
@@ -46,7 +46,7 @@ const Account = () => {
             amount: amt
         }
 
-        axios.put('http://localhost:5000/portfolios/', data, headers).then(
+        axios.put('https://morning-brushlands-41565.herokuapp.com/portfolios/', data, headers).then(
             res => {
                 setSpendingPower(res.data.spendingPower.$numberDecimal)
             }

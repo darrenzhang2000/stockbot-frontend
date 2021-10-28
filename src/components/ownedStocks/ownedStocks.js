@@ -24,7 +24,7 @@ const OwnedStocks = () => {
 
         var options = {
             method: 'GET',
-            url: 'http://localhost:5000/ownedStocks/',
+            url: 'https://morning-brushlands-41565.herokuapp.com/ownedStocks/',
             headers: headers,
             params: data
         };

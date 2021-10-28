@@ -22,7 +22,7 @@ const TrackedStockButton = (props) => {
 
         var options = {
             method: 'POST',
-            url: 'http://localhost:5000/trackedStocks',
+            url: 'https://morning-brushlands-41565.herokuapp.com/trackedStocks',
             headers: headers,
             data: qs.stringify(data)
         };

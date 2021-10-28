@@ -48,7 +48,7 @@ export default function SignUp() {
 
         var options = {
             method: 'POST',
-            url: 'http://localhost:5000/users/register',
+            url: 'https://morning-brushlands-41565.herokuapp.com/users/register',
             headers: headers,
             data: qs.stringify(data)
         };
